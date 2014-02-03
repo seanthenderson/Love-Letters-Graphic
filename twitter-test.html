@@ -1,0 +1,46 @@
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'search',
+      /*put your twitter id that people use to reply to you below. Mine is mhorning. If you only want to see the Tweets that you have Tweeted, then delete the part below that says- OR to:mhorning */
+     
+      search: '#TBLoveLetters',
+     
+       /*this is the duration in terms of seconds*/
+      interval: 1000,
+     
+       /*this is the title you want on your tweets*/
+      title: 'Tiger Beat',
+     
+      subject: 'Love Letters',
+       /*setting width to 'auto' will adjust the width of your tweetbox to whatever is set on your div. You can change this to something like 500px if you want*/
+      width: 325,
+      height: 320,
+      theme: {
+        shell: {
+         
+               /*this will change the background color of your tweetbox. It is currently yellow*/
+              background: '#000',
+          /*this will change the color of the text in your background*/
+             
+              color: '#ffffff'
+        },
+        tweets: {
+         
+               /*this will change the background color behind your tweets. It is currently white*/
+              background: '#ffffff',
+           /*this will change the color of the text in your tweets. It is currently pink*/
+              color: '#000',
+           /*this will change the color of anything that is hyperlinked in your tweet. It is currently blue*/
+              links: '#1985b5'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        behavior: 'default'
+      }
+    }).render().start();
+    </script>
